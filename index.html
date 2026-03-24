@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Romera Partners — Your Outbound Sales Partner</title>
+<meta name="description" content="Romera is an outbound sales agency helping B2B companies scale effortlessly across Europe. No cure, no pay.">
+<link rel="stylesheet" href="styles.css">
+<style>
+.hero{padding:10rem 0 4rem;text-align:center}
+.hero h1{font-size:clamp(2.2rem,5.5vw,4.2rem);letter-spacing:-0.02em;max-width:800px;margin:0 auto}
+.hero h1 span{color:var(--primary)}
+.hero>div>p{margin-top:1.5rem;font-size:1.15rem;color:var(--muted);max-width:600px;margin-left:auto;margin-right:auto}
+.hero .bold-text{margin-top:0.75rem;font-weight:700;color:var(--fg);font-size:1.15rem}
+.hero-btns{margin-top:2rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.features{padding:5rem 0}
+.features-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
+.feature-card{padding:2rem;border-radius:var(--radius);border:1px solid var(--border);background:var(--card);transition:box-shadow 0.3s}
+.feature-card:hover{box-shadow:0 8px 32px rgba(220,38,38,0.06)}
+.feature-card .icon-box{margin-bottom:1.25rem}
+.feature-card h3{font-size:1.2rem;margin-bottom:0.75rem}
+.feature-card p{color:var(--muted);font-size:0.95rem;line-height:1.7}
+.nocure{padding:5rem 0}
+.nocure .dark-box{max-width:900px;margin:0 auto}
+.nocure .icon-box-lg{margin:0 auto 1.5rem;background:rgba(220,38,38,0.2)}
+.nocure h2{font-size:clamp(1.8rem,4vw,3rem);margin-bottom:1.5rem}
+.nocure p{font-size:1.1rem;opacity:0.8;max-width:600px;margin:0 auto 2rem;line-height:1.8}
+.testimonials{padding:5rem 0;background:var(--secondary)}
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.t-card{background:var(--card);padding:2rem;border-radius:var(--radius);border:1px solid var(--border);transition:box-shadow 0.3s}
+.t-card:hover{box-shadow:var(--shadow)}
+.t-quote{font-size:2rem;color:rgba(220,38,38,0.25);font-family:var(--heading);margin-bottom:1rem;line-height:1}
+.t-card blockquote{color:var(--fg);font-style:italic;line-height:1.7;margin-bottom:1.5rem;font-size:0.95rem}
+.t-card .name{font-family:var(--heading);font-weight:700;font-size:0.95rem}
+.t-card .role{font-size:0.825rem;color:var(--muted)}
+.process{padding:5rem 0}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-bottom:3rem}
+.p-step{text-align:center;padding:1.5rem}
+.p-step .icon-box-lg{margin:0 auto 1.25rem}
+.step-num{font-size:0.7rem;font-weight:700;color:var(--primary);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem}
+.p-step h3{font-family:var(--heading);font-weight:700;font-size:1.1rem;margin-bottom:0.5rem}
+.p-step p{font-size:0.875rem;color:var(--muted);line-height:1.7}
+.faq{padding:5rem 0;background:var(--secondary)}
+.faq-list{max-width:720px;margin:0 auto}
+.faq-item{background:var(--card);border:1px solid var(--border);border-radius:12px;margin-bottom:0.75rem;overflow:hidden}
+.faq-q{width:100%;padding:1.25rem 1.5rem;display:flex;justify-content:space-between;align-items:center;background:none;border:none;cursor:pointer;font-family:var(--heading);font-weight:600;font-size:0.95rem;color:var(--fg);text-align:left}
+.faq-q svg{width:20px;height:20px;transition:transform 0.3s;flex-shrink:0;margin-left:1rem;color:var(--muted);stroke:currentColor;fill:none;stroke-width:2}
+.faq-q.open svg{transform:rotate(180deg)}
+.faq-a{padding:0 1.5rem 1.25rem;color:var(--muted);font-size:0.9rem;line-height:1.7;display:none}
+.faq-a.open{display:block}
+.cta-bottom{padding:5rem 0;text-align:center}
+.cta-bottom h2{font-size:clamp(1.8rem,4vw,3rem);max-width:600px;margin:0 auto 1rem}
+.cta-bottom p{font-size:1.1rem;color:var(--muted);max-width:540px;margin:0 auto 2rem}
+@media(max-width:768px){
+  .features-grid,.testimonials-grid{grid-template-columns:1fr}
+  .process-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:480px){
+  .process-grid{grid-template-columns:1fr}
+  .hero-btns{flex-direction:column;align-items:center}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav"><div class="wrap">
+  <a href="/" class="nav-logo">Romera</a>
+  <div class="nav-links">
+    <a href="/#approach">Our Approach</a>
+    <a href="/#process">Our Process</a>
+    <div class="nav-dropdown"><a href="#">Company ▾</a><div class="nav-dropdown-menu"><a href="/about.html">About us</a><a href="/contact.html">Contact</a></div></div>
+  </div>
+  <div class="nav-links"><a href="https://calendly.com/borge-romerapartners/30min" target="_blank" class="btn btn-primary">Book a Meeting</a></div>
+  <button class="hamburger" onclick="document.getElementById('mob').classList.toggle('open')" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+</div></nav>
+<div id="mob" class="mobile-menu"><a href="/#approach">Our Approach</a><a href="/#process">Our Process</a><a href="/about.html">About us</a><a href="/contact.html">Contact</a><a href="https://calendly.com/borge-romerapartners/30min" target="_blank" class="btn btn-primary">Book a Meeting</a></div>
+
+<!-- HERO -->
+<section class="hero"><div class="wrap">
+  <h1>Your outbound sales partner <span>for B2B SaaS &amp; AI</span></h1>
+  <p>Romera is an outbound sales agency helping B2B SaaS &amp; AI companies scale effortlessly across Europe.</p>
+  <p class="bold-text">No cure, no pay.</p>
+  <div class="hero-btns">
+    <a href="https://calendly.com/borge-romerapartners/30min" target="_blank" class="btn btn-primary btn-lg">Book a Meeting</a>
+    <a href="#approach" class="btn btn-outline btn-lg">Our Approach</a>
+  </div>
+</div></section>
+
+<!-- FEATURES -->
+<section id="approach" class="features"><div class="wrap">
+  <div class="section-header"><h2>Why Choose Romera?</h2><p>Our specialized approach delivers results tailored for B2B SaaS &amp; AI companies expanding into new markets.</p></div>
+  <div class="features-grid">
+    <div class="feature-card reveal"><div class="icon-box"><svg viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div><h3>High conversion</h3><p>Our proven cold-call methodology cuts through the noise, achieving a 20% conversion rate from lead list to qualified meetings.</p></div>
+    <div class="feature-card reveal"><div class="icon-box"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><h3>Multiple regions</h3><p>Romera drives your international growth as a single partner in key markets: DACH, UK &amp; Ireland, Benelux, Scandinavia.</p></div>
+    <div class="feature-card reveal"><div class="icon-box"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg></div><h3>B2B specialization</h3><p>We work with B2B companies across technology, SaaS, and professional services.</p></div>
+    <div class="feature-card reveal"><div class="icon-box"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><h3>The fastest way to grow</h3><p>From onboarding to your first meetings in under 30 days. Our streamlined formula delivers faster results than traditional agencies.</p></div>
+  </div>
+</div></section>
+
+<!-- NO CURE NO PAY -->
+<section class="nocure"><div class="wrap"><div class="dark-box"><div class="dark-box-inner">
+  <div class="icon-box icon-box-lg"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+  <h2>No Cure, No Pay</h2>
+  <p>Our approach means you only invest in meetings that drive real value. Success is defined by engaging the right decision-makers, targeting companies that match your ideal customer profile.</p>
+  <a href="https://calendly.com/borge-romerapartners/30min" target="_blank" class="btn btn-primary btn-lg">Book a Meeting</a>
+</div></div></div></section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials"><div class="wrap">
+  <div class="section-header"><div class="section-tag">Testimonials</div><h2>What our clients say</h2></div>
+  <div class="testimonials-grid">
+    <div class="t-card reveal"><div class="t-quote">&ldquo;&ldquo;</div><blockquote>"Working with Romera helped us ramp up fast in new markets. They adapt quickly and connect us with ideal prospects across multiple countries."</blockquote><div class="name">Head of Sales</div><div class="role">B2B SaaS Company</div></div>
+    <div class="t-card reveal"><div class="t-quote">&ldquo;&ldquo;</div><blockquote>"We chose Romera over building our own SDR team. Within a week we were up and running, and meetings followed fast."</blockquote><div class="name">VP of Growth</div><div class="role">Tech Scale-up</div></div>
+    <div class="t-card reveal"><div class="t-quote">&ldquo;&ldquo;</div><blockquote>"With Romera's fast and excellent onboarding, we've had quality meetings right from the start. This resulted in a high-value pipeline within a few short months."</blockquote><div class="name">Chief Revenue Officer</div><div class="role">SaaS Platform</div></div>
+    <div class="t-card reveal"><div class="t-quote">&ldquo;&ldquo;</div><blockquote>"Romera helped us boost our pipeline with high-quality meetings in the Benelux and UK. Highly recommended for companies expanding to new regions."</blockquote><div class="name">Head of Business Development</div><div class="role">B2B Technology Company</div></div>
+    <div class="t-card reveal"><div class="t-quote">&ldquo;&ldquo;</div><blockquote>"Romera delivers quality leads from C-level execs across Western Europe. Their approach even enabled us to launch a new proposition. They truly stand out."</blockquote><div class="name">Sales Director</div><div class="role">Enterprise Software Company</div></div>
+    <div class="t-card reveal"><div class="t-quote">&ldquo;&ldquo;</div><blockquote>"Romera helped us break into DACH, and we closed our first deal within 8 weeks. No fluff, just results."</blockquote><div class="name">Co-founder</div><div class="role">AI Start-up</div></div>
+  </div>
+</div></section>
+
+<!-- PROCESS -->
+<section id="process" class="process"><div class="wrap">
+  <div class="section-header"><div class="section-tag">Our proven process</div><h2>Streamlined for sales success</h2><p>Every step is designed to maximize your results while ensuring efficiency and alignment with your goals.</p></div>
+  <div class="process-grid">
+    <div class="p-step reveal"><div class="icon-box icon-box-lg"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><div class="step-num">Step 1</div><h3>Onboarding</h3><p>Define your ICP and set up a tailored outbound strategy in 1-2 weeks.</p></div>
+    <div class="p-step reveal"><div class="icon-box icon-box-lg"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div><div class="step-num">Step 2</div><h3>Targeting</h3><p>We build and refine a curated list of ideal companies for maximum relevance.</p></div>
+    <div class="p-step reveal"><div class="icon-box icon-box-lg"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div class="step-num">Step 3</div><h3>Outreach</h3><p>Our senior BDRs engage decision-makers with proven cold-call methodology.</p></div>
+    <div class="p-step reveal"><div class="icon-box icon-box-lg"><svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div><div class="step-num">Step 4</div><h3>Results</h3><p>Qualified meetings booked, pipeline built, and continuous optimization.</p></div>
+  </div>
+  <div class="center"><a href="#process" class="btn btn-primary btn-lg">Discover Our Process →</a></div>
+</div></section>
+
+<!-- FAQ -->
+<section class="faq"><div class="wrap">
+  <div class="section-header"><h2>Frequently Asked Questions</h2></div>
+  <div class="faq-list">
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What is the time commitment required for a successful onboarding?<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">On average, onboarding with Romera requires 1-2 weeks, during which we collaborate with you in 3 sessions to define your Ideal Customer Profile (ICP) and set up a tailored outbound strategy.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What kind of businesses can Romera help with their expansion?<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">Romera specializes in working with B2B SaaS companies looking to expand into key European markets, including Benelux, Scandinavia, DACH, and the UK.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How does Romera book meetings for us?<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">We use our proven outbound method combining an advanced tech stack for targeted prospecting with a 90% focus on cold calling for direct and effective outreach.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Why does Romera have a better conversion rate than most marketing channels?<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">Our expert Senior BDRs excel at engaging top decision-makers. We combine hyper-precise targeting, an advanced tech stack, and persistent account development for sustained results.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Why is Romera a better choice than building an in-house team?<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">Romera provides specialized efficiency, a no-cure-no-pay model with zero overhead costs, faster results (meetings within 2-4 weeks), and zero risk — if we don't deliver, you don't pay.</div></div>
+  </div>
+</div></section>
+
+<!-- CTA -->
+<section class="cta-bottom"><div class="wrap">
+  <h2>Ready to take your business to the next level?</h2>
+  <p>Proven strategies, real-world examples, and expert tips to land your first customers in new markets, fast.</p>
+  <a href="https://calendly.com/borge-romerapartners/30min" target="_blank" class="btn btn-primary btn-lg">Book a Meeting →</a>
+</div></section>
+
+<!-- FOOTER -->
+<footer class="footer"><div class="wrap">
+  <a href="/" class="footer-logo">Romera</a>
+  <div class="footer-links"><a href="/#approach">Our Approach</a><a href="/#process">Our Process</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></div>
+  <p class="footer-copy">&copy; 2026 Romera Partners. All rights reserved.</p>
+</div></footer>
+
+<script>
+function toggleFaq(b){var o=b.classList.contains('open');document.querySelectorAll('.faq-q').forEach(function(q){q.classList.remove('open');q.nextElementSibling.classList.remove('open')});if(!o){b.classList.add('open');b.nextElementSibling.classList.add('open')}}
+var obs=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)x.target.classList.add('visible')})},{threshold:0.08});
+document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el)});
+</script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Romera Partners</title>
+<meta name="description" content="About Romera Partners. From vision to reality — our story, mission, and team.">
+<link rel="stylesheet" href="styles.css">
+<style>
+.page-hero{padding:10rem 0 4rem;text-align:center}
+.page-hero h1{font-size:clamp(2.2rem,5vw,3.8rem)}
+.page-hero p{margin-top:1.25rem;font-size:1.1rem;color:var(--muted);max-width:640px;margin-left:auto;margin-right:auto;line-height:1.8}
+.timeline{padding:0 0 5rem;max-width:720px;margin:0 auto}
+.tl-line{border-left:2px solid var(--border);margin-left:1rem;padding-left:2rem}
+.tl-item{position:relative;padding-bottom:3rem}
+.tl-item:last-child{padding-bottom:0}
+.tl-dot{position:absolute;left:-2.45rem;top:0.25rem;width:12px;height:12px;border-radius:50%;background:var(--primary)}
+.tl-year{font-size:0.7rem;font-weight:700;color:var(--primary);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.25rem}
+.tl-item h3{font-size:1.2rem;margin-bottom:0.5rem}
+.tl-item p{color:var(--muted);line-height:1.7;font-size:0.95rem}
+.mission-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:900px;margin:0 auto;padding:0 0 5rem}
+.mission-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:1.75rem}
+.mission-card h3{font-size:1.05rem;margin-bottom:0.5rem}
+.mission-card p{font-size:0.9rem;color:var(--muted);line-height:1.7}
+.about-cta{padding:5rem 0}
+.about-cta .dark-box{max-width:900px;margin:0 auto}
+.about-cta h2{font-size:clamp(1.8rem,3.5vw,2.5rem);margin-bottom:1rem}
+.about-cta p{font-size:1.05rem;opacity:0.8;max-width:540px;margin:0 auto 2rem}
+.join{padding:5rem 0;background:var(--secondary)}
+.join-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;max-width:900px;margin:0 auto}
+.join h2{font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:1rem}
+.join>div>div>p{color:var(--muted);line-height:1.7;margin-bottom:1.5rem}
+.perks{list-style:none}
+.perks li{display:flex;align-items:flex-start;gap:0.75rem;margin-bottom:0.75rem;font-size:0.9rem}
+.perk-check{width:20px;height:20px;border-radius:50%;background:var(--primary-light);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.perk-check svg{width:12px;height:12px;stroke:var(--primary);fill:none;stroke-width:2.5}
+@media(max-width:768px){
+  .mission-grid,.join-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav"><div class="wrap">
+  <a href="/" class="nav-logo">Romera</a>
+  <div class="nav-links">
+    <a href="/#approach">Our Approach</a>
+    <a href="/#process">Our Process</a>
+    <div class="nav-dropdown"><a href="#">Company ▾</a><div class="nav-dropdown-menu"><a href="/about.html">About us</a><a href="/contact.html">Contact</a></div></div>
+  </div>
+  <div class="nav-links"><a href="https://calendly.com/borge-romerapartners/30min" target="_blank" class="btn btn-primary">Book a Meeting</a></div>
+  <button class="hamburger" onclick="document.getElementById('mob').classList.toggle('open')" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+</div></nav>
+<div id="mob" class="mobile-menu"><a href="/#approach">Our Approach</a><a href="/#process">Our Process</a><a href="/about.html">About us</a><a href="/contact.html">Contact</a><a href="https://calendly.com/borge-romerapartners/30min" target="_blank" class="btn btn-primary">Book a Meeting</a></div>
+
+<!-- HERO -->
+<section class="page-hero"><div class="wrap">
+  <h1>From vision to reality</h1>
+  <p>Romera was founded to solve one of the biggest challenges B2B companies face: breaking into new international markets. With battle-tested outbound expertise and a results-driven culture, we've become a trusted growth partner for companies across technology, SaaS, and professional services.</p>
+</div></section>
+
+<!-- TIMELINE -->
+<section class="wrap"><div class="timeline"><div class="tl-line">
+  <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2024</div><h3>Scaling the Team</h3><p>Our team grew from 5 to over 25 professionals in just two years. We attracted top-tier sales talent and invested in continuous training, ensuring every team member delivered the quality our clients expected.</p></div>
+  <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2025</div><h3>New Leadership &amp; Expansion</h3><p>To fuel the next phase of growth, we welcomed a co-founder to lead operations. With strengthened leadership and a clear strategic vision, Romera is positioned to become the leading outbound sales partner for B2B companies across Europe.</p></div>
+</div></div></section>
+
+<!-- MISSION CARDS -->
+<section class="wrap">
+  <div class="mission-grid">
+    <div class="mission-card reveal"><h3>Our Mission</h3><p>To empower B2B companies with world-class outbound sales capabilities, enabling them to expand confidently into new markets and accelerate revenue growth.</p></div>
+    <div class="mission-card reveal"><h3>Our Approach</h3><p>We embed dedicated sales teams into our clients' operations — trained on their product, aligned with their goals, and equipped with proven outbound frameworks.</p></div>
+    <div class="mission-card reveal"><h3>Our Reach</h3><p>Operating across Europe, we help companies navigate diverse markets with multilingual teams, local market intelligence, and culturally adapted sales strategies.</p></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="about-cta"><div class="wrap"><div class="dark-box"><div class="dark-box-inner">
+  <h2>Ready to Grow with Romera?</h2>
+  <p>Whether you're looking to scale your business or join our high-performance team, Romera is the place to be.</p>
+  <a href="https://calendly.com/borge-romerapartners/30min" target="_blank" class="btn btn-primary btn-lg">Book a Meeting</a>
+</div></div></div></section>
+
+<!-- JOIN TEAM -->
+<section class="join"><div class="wrap"><div class="join-grid">
+  <div>
+    <h2>Join Our Team</h2>
+    <p>At Romera, we're redefining outbound sales for SaaS. Work with top-tier clients, earn industry-leading compensation, and be part of a high-performance team.</p>
+    <a href="/contact.html" class="btn btn-outline">Contact Us →</a>
+  </div>
+  <ul class="perks">
+    <li><div class="perk-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Top-tier compensation in the industry</li>
+    <li><div class="perk-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Strong base salary + uncapped performance bonuses</li>
+    <li><div class="perk-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Flexible remote work options throughout the year</li>
+    <li><div class="perk-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Access to high-quality leads — no cold prospecting needed</li>
+    <li><div class="perk-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Rapid career growth in a fast-scaling company</li>
+    <li><div class="perk-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Premium gear from day one: MacBook, monitors, headset</li>
+    <li><div class="perk-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>Work with industry-leading tools and technology</li>
+  </ul>
+</div></div></section>
+
+<!-- FOOTER -->
+<footer class="footer"><div class="wrap">
+  <a href="/" class="footer-logo">Romera</a>
+  <div class="footer-links"><a href="/#approach">Our Approach</a><a href="/#process">Our Process</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></div>
+  <p class="footer-copy">&copy; 2026 Romera Partners. All rights reserved.</p>
+</div></footer>
+
+<script>
+var obs=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)x.target.classList.add('visible')})},{threshold:0.08});
+document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el)});
+</script>
+</body>
+</html>
