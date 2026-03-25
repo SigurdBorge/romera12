@@ -30,8 +30,8 @@ a{text-decoration:none;color:inherit}
 .nav-links{display:flex;align-items:center;gap:2rem}
 .nav-links a{font-size:0.875rem;font-weight:500;color:var(--fg);transition:color 0.2s}
 .nav-links a:hover{color:var(--primary)}
-.nav-dropdown{position:relative}
-.nav-dropdown-menu{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);margin-top:0.5rem;background:var(--card);border:1px solid var(--border);border-radius:12px;box-shadow:var(--shadow);padding:0.5rem 0;min-width:160px;z-index:10}
+.nav-dropdown{position:relative;padding-bottom:0.5rem}
+.nav-dropdown-menu{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);margin-top:0rem;background:var(--card);border:1px solid var(--border);border-radius:12px;box-shadow:var(--shadow);padding:0.5rem 0;min-width:160px;z-index:10}
 .nav-dropdown:hover .nav-dropdown-menu{display:block}
 .nav-dropdown-menu a{display:block;padding:0.6rem 1.25rem;font-size:0.875rem;transition:background 0.2s}
 .nav-dropdown-menu a:hover{background:var(--secondary)}
